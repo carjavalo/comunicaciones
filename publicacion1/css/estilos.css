@@ -76,13 +76,17 @@ img{display:block;border:0}
 .h1-intro{
   font-family:'Nunito',sans-serif;font-weight:600;
   font-size:33.8px;line-height:32px;color:var(--tinta);
-  text-align:justify;
 }
 .p-just{
   width:777.8px;
   font-size:14.3px;line-height:17.2px;color:var(--tinta);
-  text-align:justify;
+  letter-spacing:-0.07px;
 }
+/* Cada renglón se justifica por separado para calcar los cortes de línea
+   exactos del documento original. El último renglón queda alineado a la
+   izquierda, como en un párrafo justificado normal. */
+.h1-intro .ln,.p-just .ln{display:block;text-align-last:justify}
+.h1-intro .ln:last-child,.p-just .ln:last-child{text-align-last:left}
 
 .h1{
   font-family:'Nunito',sans-serif;font-weight:600;
