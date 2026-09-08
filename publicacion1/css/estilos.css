@@ -1,6 +1,6 @@
 /* =====================================================================
    Congreso Internacional de Medicina Integrativa Antroposófica
-   Réplica HTML de la landing page (original: 900 x 6326,5 pt)
+   Réplica HTML de la landing page (original: 900 x 6877,5 pt)
    Todas las medidas están en px = pt del documento original.
    ===================================================================== */
 
@@ -13,7 +13,7 @@
   --titulo:     #195696;  /* títulos de temas           */
   --tabla:      #3f5ea2;  /* cabecera y bandas de tabla */
   --tabla-celda:#e9ebf4;  /* fondo de celdas            */
-  --tabla-acento:#5676ba; /* textos destacados de tabla */
+  --tabla-acento:#5676ba; /* títulos destacados         */
   --gris:       #6b6f70;  /* texto de la tabla          */
   --gris-claro: #909298;
   --cert:       #c4cce8;  /* banda de certificados      */
@@ -36,7 +36,7 @@ body{
 .page{
   position:relative;
   width:900px;
-  height:6326.5px;
+  height:6877.5px;
   margin:0 auto;
   background:#fff;
   overflow:hidden;
@@ -64,12 +64,24 @@ img{display:block;border:0}
 
 /* ====================== 3. INTRODUCCIÓN ============================ */
 .s-intro{
-  height:1231.9px;
+  height:1549.7px;
   background-color:var(--lila);
   background-image:var(--velo),url(../img/texture-intro.png);
-  background-position:0 0,-0.4px -179.6px;
-  background-size:auto,900.8px 1425px;
+  background-position:0 0,-0.4px -5px;
+  background-size:auto,900.8px 1568.2px;
   background-repeat:no-repeat;
+}
+
+/* Titular de apertura y párrafos justificados */
+.h1-intro{
+  font-family:'Nunito',sans-serif;font-weight:600;
+  font-size:33.8px;line-height:32px;color:var(--tinta);
+  text-align:justify;
+}
+.p-just{
+  width:777.8px;
+  font-size:14.3px;line-height:17.2px;color:var(--tinta);
+  text-align:justify;
 }
 
 .h1{
@@ -96,7 +108,7 @@ img{display:block;border:0}
   border:1.5px solid;
   border-left-width:6px;
   border-radius:5px 17px 17px 5px;
-  padding:12.1px 0 0 15.8px;
+  padding:12.4px 0 0 15.8px;
 }
 .card--blue{border-color:var(--azul)}
 .card--cyan{border-color:var(--cian)}
@@ -104,7 +116,7 @@ img{display:block;border:0}
   font-family:'Nunito',sans-serif;font-weight:600;
   font-size:16.9px;line-height:22.4px;color:var(--tinta);
 }
-.c-body{font-size:14.3px;line-height:23.25px;margin-top:10.9px}
+.c-body{font-size:14.3px;line-height:23.25px;margin-top:10.6px}
 
 /* Formatos del congreso (líneas + rótulo) */
 .rule{position:absolute;height:1.5px;display:block}
@@ -130,7 +142,7 @@ img{display:block;border:0}
   height:534px;
   background-color:var(--lila);
   background-image:var(--velo),url(../img/texture-temas.png);
-  background-position:0 0,0 -0.2px;
+  background-position:0 0,0 -0.3px;
   background-size:auto,900px 534.5px;
   background-repeat:no-repeat;
 }
@@ -147,7 +159,7 @@ img{display:block;border:0}
   background:var(--lila);
   border:1.5px solid;
   border-radius:16px;
-  padding:12.85px 14.25px 0;
+  padding:12.75px 14.25px 0;
 }
 .tema--blue{border-color:var(--azul)}
 .tema--cyan{border-color:var(--cian)}
@@ -160,16 +172,16 @@ img{display:block;border:0}
 
 /* ====================== 5. CAMINO INTERIOR ========================= */
 .s-camino{
-  height:299px;
-  background:url(../img/camino-bg.jpg) 0 0/900px 299px no-repeat;
+  height:298.5px;
+  background:url(../img/camino-bg.jpg) 0 0/900px 298.5px no-repeat;
 }
 
 /* ====================== 6. NUESTROS DOCENTES ======================= */
 .s-docentes{
-  height:895.9px;
+  height:896.3px;
   background-color:var(--lila);
   background-image:var(--velo),url(../img/texture-docentes.png);
-  background-position:0 0,0 -0.4px;
+  background-position:0 0,0 0;
   background-size:auto,900px 896.4px;
   background-repeat:no-repeat;
 }
@@ -184,12 +196,12 @@ img{display:block;border:0}
 
 /* ====================== 7. COSTOS ================================== */
 .s-costos{
-  height:507px;
-  background:url(../img/costos-bg.jpg) 0 0/900px 507px no-repeat;
+  height:507.1px;
+  background:url(../img/costos-bg.jpg) 0 0.1px/900px 507px no-repeat;
 }
 .tarifa{
   position:absolute;
-  width:392.2px;height:84.7px;
+  width:392.2px;height:84.8px;
   background:var(--lila);
   border:1.5px solid;
   border-radius:16px;
@@ -212,27 +224,32 @@ img{display:block;border:0}
   color:#fff;text-decoration:none;text-align:center;
   background:linear-gradient(to bottom,#006aae 0%,#006aae 36%,#00acdb 73%,#007ebb 100%);
 }
-.btn-pill u{text-decoration-thickness:1.5px;text-underline-offset:3px}
 .btn-inscripcion{
-  left:192px;top:4026px;width:509px;height:40px;
+  left:192px;top:4343px;width:509px;height:40px;
   border-radius:20px;font-size:17.7px;
 }
 .btn-pagos{
-  left:258px;top:5386px;width:384px;height:49px;
+  left:258px;top:5704px;width:384px;height:49px;
   border-radius:24.5px;font-size:24.9px;
 }
 
-.qr{position:absolute;left:341.6px;top:4086.5px;width:186.5px;height:188.9px}
+.qr{position:absolute;left:356.7px;top:4404.3px;width:186.6px;height:188.8px}
 .qr img{width:100%;height:100%}
 
-/* ====================== 8. PROGRAMACIÓN ============================ */
-.s-programa{height:1618.4px;background:#fff}
+/* ====================== 8. AGENDA ================================== */
+.s-programa{height:1843px;background:#fff}
+
+.agenda-titulo{
+  left:0;width:900px;text-align:center;
+  font-family:'Open Sans',Arial,sans-serif;font-weight:700;
+  font-size:30.2px;line-height:41.1px;color:var(--tabla-acento);
+}
 
 .agenda-wrap{
   position:absolute;
-  left:45.1px;top:4286.2px;
-  width:809.8px;
-  border:2.415px solid var(--tabla);
+  left:45.17px;top:4688.27px;
+  width:809.66px;
+  border:2.26px solid var(--tabla);
   border-radius:14px;
   overflow:hidden;
   background:var(--tabla-celda);
@@ -247,19 +264,19 @@ img{display:block;border:0}
 .agenda th,.agenda td{vertical-align:top}
 
 .agenda thead th{
-  height:51.4px;
+  height:51.27px;
   background:var(--tabla);
   color:#fff;
   font-weight:700;font-size:19.6px;line-height:26.7px;
   text-align:center;vertical-align:middle;
 }
-.agenda thead th:nth-child(1){width:131.2px}
+.agenda thead th:nth-child(1){width:131.27px}
 .agenda thead th:nth-child(2){width:217.5px}
 .agenda thead th:nth-child(3){width:232.1px}
-.agenda thead th:nth-child(4){width:224.2px}
+.agenda thead th:nth-child(4){width:224.33px}
 
 .fila td{
-  border-right:1.129px solid var(--tabla);
+  border-right:1.13px solid var(--tabla);
   font-weight:500;font-size:14px;line-height:16.8px;
   padding-left:11.3px;padding-right:8px;
 }
@@ -270,30 +287,7 @@ img{display:block;border:0}
   font-weight:600;font-size:16.7px;line-height:20px;
 }
 .fila .dic{font-style:italic;font-weight:400;margin-top:12.6px}
-
-.fila .talleres{padding-left:0;padding-right:0;text-align:center}
-.fila .talleres .destacado{
-  font-weight:700;font-size:15.9px;line-height:21.7px;color:var(--tabla-acento);
-}
-.fila .talleres ol{
-  list-style:none;text-align:left;
-  margin-left:30.3px;margin-right:12px;
-  counter-reset:taller;
-}
-.fila .talleres li{position:relative;padding-left:19.9px;margin-top:17px;counter-increment:taller}
-.fila .talleres li:first-child{margin-top:19.7px}
-.fila .talleres li::before{
-  content:counter(taller);
-  position:absolute;left:0;top:1.5px;
-  width:13.3px;height:13.3px;border-radius:50%;
-  background:var(--tabla-acento);color:var(--tabla-celda);
-  font-weight:700;font-size:10.5px;line-height:13.3px;text-align:center;
-}
-
-.fila .cierre{
-  border-right:0;text-align:center;
-  color:var(--tabla-acento);font-weight:700;font-size:20.8px;line-height:25px;
-}
+.fila .dic--sep{margin-top:27.4px}
 
 .receso td{
   height:52.1px;
@@ -317,10 +311,13 @@ img{display:block;border:0}
 .pago a:hover{text-decoration:underline}
 .pago--it{font-style:italic;font-weight:600}
 
+/* Logos institucionales antes del pie */
+.logos-inst{position:absolute;left:0;top:6100px;width:900px;height:200px}
+
 /* ====================== 9. PIE DE PÁGINA =========================== */
 .s-footer{
-  height:544.7px;
-  background:url(../img/footer-bg.jpg) 0 0/900px 544.7px no-repeat;
+  height:553.3px;
+  background:url(../img/footer-bg.jpg) 0 0/900px 553.3px no-repeat;
 }
 .pie{
   left:0;width:900px;text-align:center;
@@ -332,7 +329,7 @@ img{display:block;border:0}
 .enlace{color:var(--azul);text-decoration:none}
 .enlace:hover{text-decoration:underline}
 .linea-final{
-  position:absolute;left:60.6px;top:6281.8px;
+  position:absolute;left:60.6px;top:6824.3px;
   width:755.7px;height:2px;background:var(--tabla);
 }
 
