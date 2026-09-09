@@ -78,7 +78,7 @@ img{display:block;border:0}
   font-size:33.8px;line-height:32px;color:var(--tinta);
 }
 .p-just{
-  width:777.8px;
+  width:773.9px;
   font-size:14.3px;line-height:17.2px;color:var(--tinta);
   letter-spacing:-0.07px;
 }
@@ -86,6 +86,11 @@ img{display:block;border:0}
    exactos del documento original. El último renglón queda alineado a la
    izquierda, como en un párrafo justificado normal. */
 .h1-intro .ln,.p-just .ln{display:block;text-align-last:justify}
+/* Nuestras fuentes componen unas decimas mas anchas que las del original:
+   sin este ajuste el ultimo renglon del segundo parrafo se pasa de ancho y
+   salta de linea. Solo afecta a los renglones justificados. */
+.h1-intro .ln:not(:last-child){letter-spacing:-0.1px}
+.p-just  .ln:not(:last-child){letter-spacing:-0.16px}
 .h1-intro .ln:last-child,.p-just .ln:last-child{text-align-last:left}
 
 .h1{
@@ -301,6 +306,8 @@ img{display:block;border:0}
   border:0;
 }
 .receso .sp{letter-spacing:9.6px}
+/* El tercer receso separa "p.m." de "RECESO" con un hueco ancho, como el PDF. */
+.receso .sp-gap{display:inline-block;width:66.4px}
 .receso .sp-sm{font-size:22px;letter-spacing:8.5px}
 
 /* --------- Información para pagos --------- */
@@ -338,6 +345,10 @@ img{display:block;border:0}
 }
 
 /* ====================== Impresión ================================== */
+/* Sin esto el navegador reparte el lienzo de 6877,5 px en varias hojas carta
+   y los bloques posicionados se solapan. Con una hoja del tamaño exacto del
+   original, "Guardar como PDF" reproduce el documento en una sola pagina. */
+@page{size:900px 6877.5px;margin:0}
 @media print{
   body{background:#fff}
   .page{margin:0}

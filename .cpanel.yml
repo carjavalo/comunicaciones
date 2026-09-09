@@ -4,4 +4,7 @@ deployment:
     # Verifica que esta ruta sea la del document root del dominio en cPanel.
     # Para el usuario "uoxclxvl" el valor estandar es /home/uoxclxvl/public_html/
     - export DEPLOYPATH=/home/uoxclxvl/public_html/
-    - /bin/cp -R publicacion1/. $DEPLOYPATH
+    - /bin/cp -R index.html $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R fonts $DEPLOYPATH
+    - /bin/cp -R img $DEPLOYPATH
