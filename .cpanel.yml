@@ -8,3 +8,4 @@ deployment:
     - /bin/cp -R css $DEPLOYPATH
     - /bin/cp -R fonts $DEPLOYPATH
     - /bin/cp -R img $DEPLOYPATH
+    - /bin/cp -R capacitaciones $DEPLOYPATH
